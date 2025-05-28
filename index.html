@@ -5,27 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanjana Balannagari | Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; }
-        header { background-color: #343a40; color: white; padding: 2rem 0; text-align: center; }
-        section { padding: 3rem 0; }
-        .project-card { background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); padding: 1rem; margin-bottom: 2rem; }
-        footer { background-color: #343a40; color: white; text-align: center; padding: 1rem 0; }
-        .btn-custom { background-color: #343a40; color: white; }
-        .btn-custom:hover { background-color: #495057; }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: linear-gradient(120deg, #f8fafc 0%, #e9ecef 100%);
+            color: #23272b;
+        }
+        header {
+            background: linear-gradient(90deg, #343a40 60%, #198754 100%);
+            color: white;
+            padding: 3rem 0 2rem 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        .avatar {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.12);
+            margin-bottom: 1rem;
+        }
+        section {
+            padding: 2.7rem 0 1.7rem 0;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #198754;
+            font-weight: 700;
+            margin-bottom: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+        .project-card {
+            background: white;
+            border-radius: 14px;
+            box-shadow: 0 4px 20px rgba(25, 135, 84, 0.08);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            transition: transform 0.18s, box-shadow 0.18s;
+            border: 1.5px solid #e9ecef;
+        }
+        .project-card:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 8px 40px rgba(25,135,84,0.18);
+            border-color: #19875444;
+        }
+        .btn-custom {
+            background: linear-gradient(90deg, #198754 70%, #343a40 100%);
+            color: white;
+            border-radius: 50px;
+            padding: 0.55rem 2rem;
+            font-size: 1rem;
+            border: none;
+            transition: background 0.2s, transform 0.18s;
+            margin-top: 1rem;
+        }
+        .btn-custom:hover {
+            background: linear-gradient(90deg, #343a40 60%, #198754 100%);
+            color: #fff;
+            transform: scale(1.04);
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li::before {
+            content: "✔ ";
+            color: #198754;
+            font-weight: bold;
+        }
+        a, a:visited {
+            color: #198754;
+            text-decoration: none;
+            transition: color 0.16s;
+        }
+        a:hover {
+            color: #155d38;
+            text-decoration: underline;
+        }
+        footer {
+            background: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 1.2rem 0 1rem 0;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            margin-top: 3rem;
+        }
+        @media (max-width: 576px) {
+            header h1 { font-size: 2rem; }
+            section { padding: 2rem 0 1.2rem 0; }
+            .project-card { padding: 1rem; }
+        }
     </style>
 </head>
 <body>
 
 <header>
+    <!-- Optional: Add your real photo here! -->
+    <img src="https://ui-avatars.com/api/?name=Sanjana+Balannagari&size=220&background=198754&color=fff" alt="Profile avatar" class="avatar">
     <h1>Sanjana Balannagari</h1>
-    <p>Software Developer | Java Enthusiast | Web Application Developer</p>
+    <p>Software Developer &nbsp;|&nbsp; Java Enthusiast &nbsp;|&nbsp; Web Application Developer</p>
 </header>
 
 <div class="container">
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a passionate software developer currently pursuing my Master's in Computer Science at Governors State University. With experience in Java, Python, and ASP.NET, I specialize in building scalable, efficient applications and dynamic web solutions.</p>
+        <p>
+            I am a passionate software developer currently pursuing my Master's in Computer Science at Governors State University. With hands-on experience in Java, Python, and ASP.NET, I specialize in building scalable, efficient applications and dynamic web solutions.
+        </p>
     </section>
 
     <section id="projects">
@@ -50,8 +149,10 @@
 
     <section id="experience">
         <h2>Professional Experience</h2>
-        <p><strong>Intern | Irax Tech Pvt. Ltd. | May 2023 – Nov 2023</strong><br>
-        Developed a responsive web application using HTML, CSS, JavaScript, and CodeIgniter. Focused on modular MVC structure, Bootstrap styling, and database integration with MySQL.</p>
+        <p>
+            <strong>Intern | Irax Tech Pvt. Ltd. | May 2023 – Nov 2023</strong><br>
+            Developed a responsive web application using HTML, CSS, JavaScript, and CodeIgniter. Focused on modular MVC structure, Bootstrap styling, and database integration with MySQL.
+        </p>
     </section>
 
     <section id="skills">
@@ -68,7 +169,7 @@
         <h2>Contact</h2>
         <p>Email: <a href="mailto:sanjana.balannagari@gmail.com">sanjana.balannagari@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com" target="_blank">Visit My Profile</a></p>
-        <a href="#" class="btn btn-custom">Download Resume</a>
+        <a href="#" class="btn btn-custom" download>Download Resume</a>
     </section>
 </div>
 
