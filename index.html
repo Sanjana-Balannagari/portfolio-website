@@ -1,182 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanjana Balannagari | Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
-            background: linear-gradient(120deg, #f8fafc 0%, #e9ecef 100%);
-            color: #23272b;
-        }
-        header {
-            background: linear-gradient(90deg, #343a40 60%, #0d6efd 100%);
-            color: white;
-            padding: 3rem 0 2rem 0;
-            text-align: center;
-            position: relative;
-        }
-        header h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
-        header p {
-            font-size: 1.3rem;
-            font-weight: 500;
-        }
-        .avatar {
-            width: 110px;
-            height: 110px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 4px solid #fff;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.12);
-            margin-bottom: 1rem;
-        }
-        section {
-            padding: 2.7rem 0 1.7rem 0;
-        }
-        h2 {
-            font-family: 'Montserrat', sans-serif;
-            color: #0d6efd;
-            font-weight: 700;
-            margin-bottom: 1.1rem;
-            letter-spacing: 0.5px;
-        }
-        .project-card {
-            background: white;
-            border-radius: 14px;
-            box-shadow: 0 4px 20px rgba(13,110,253, 0.08);
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            transition: transform 0.18s, box-shadow 0.18s;
-            border: 1.5px solid #e9ecef;
-        }
-        .project-card:hover {
-            transform: translateY(-6px) scale(1.02);
-            box-shadow: 0 8px 40px rgba(13,110,253, 0.18);
-            border-color: #0d6efd44;
-        }
-        .btn-custom {
-            background: linear-gradient(90deg, #0d6efd 70%, #343a40 100%);
-            color: white;
-            border-radius: 50px;
-            padding: 0.55rem 2rem;
-            font-size: 1rem;
-            border: none;
-            transition: background 0.2s, transform 0.18s;
-            margin-top: 1rem;
-        }
-        .btn-custom:hover {
-            background: linear-gradient(90deg, #343a40 60%, #0d6efd 100%);
-            color: #fff;
-            transform: scale(1.04);
-        }
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        ul li::before {
-            content: "✔ ";
-            color: #0d6efd;
-            font-weight: bold;
-        }
-        a, a:visited {
-            color: #0d6efd;
-            text-decoration: none;
-            transition: color 0.16s;
-        }
-        a:hover {
-            color: #0a58ca;
-            text-decoration: underline;
-        }
-        footer {
-            background: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 1.2rem 0 1rem 0;
-            font-size: 1rem;
-            letter-spacing: 0.5px;
-            margin-top: 3rem;
-        }
-        @media (max-width: 576px) {
-            header h1 { font-size: 2rem; }
-            section { padding: 2rem 0 1.2rem 0; }
-            .project-card { padding: 1rem; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanjana Balannagari | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', Arial, sans-serif; background: linear-gradient(120deg,#f8fafc 0%,#e9ecef 100%); color:#23272b; }
+    header { background: linear-gradient(90deg,#343a40 60%,#0d6efd 100%); color:white; padding:3rem 0 2rem; text-align:center; }
+    header h1 { font-family:'Montserrat',sans-serif; font-weight:700; letter-spacing:1px; }
+    header p { font-size:1.3rem; font-weight:500; }
+    .avatar { width:110px; height:110px; border-radius:50%; border:4px solid #fff; object-fit:cover; margin-bottom:1rem; }
+    section { padding:2.5rem 0 1.7rem; }
+    h2 { font-family:'Montserrat',sans-serif; color:#0d6efd; font-weight:700; margin-bottom:1.1rem; }
+    .project-card { background:white; border-radius:14px; box-shadow:0 4px 20px rgba(13,110,253,0.08); padding:1.5rem; margin-bottom:2rem; transition:.2s; border:1.5px solid #e9ecef; }
+    .project-card:hover { transform:translateY(-6px) scale(1.02); box-shadow:0 8px 40px rgba(13,110,253,0.18); border-color:#0d6efd44; }
+    .btn-custom { background:linear-gradient(90deg,#0d6efd 70%,#343a40 100%); color:white; border-radius:50px; padding:.55rem 2rem; border:none; margin-top:1rem; }
+    .btn-custom:hover { background:linear-gradient(90deg,#343a40 60%,#0d6efd 100%); transform:scale(1.04); }
+    ul { list-style:none; padding-left:0; }
+    ul li::before { content:"✔ "; color:#0d6efd; font-weight:bold; }
+    footer { background:#343a40; color:#fff; text-align:center; padding:1.2rem 0; margin-top:3rem; }
+  </style>
 </head>
 <body>
 
 <header>
-    <!-- Optional: Add your real photo here! -->
-    <img src="https://ui-avatars.com/api/?name=Sanjana+Balannagari&size=220&background=0d6efd&color=fff" alt="Profile avatar" class="avatar">
-    <h1>Sanjana Balannagari</h1>
-    <p>Software Developer &nbsp;|&nbsp; Java Enthusiast &nbsp;|&nbsp; Web Application Developer</p>
+  <img src="https://ui-avatars.com/api/?name=Sanjana+Balannagari&size=220&background=0d6efd&color=fff" alt="Profile avatar" class="avatar">
+  <h1>Sanjana Balannagari</h1>
+  <p>Software Developer | Java & Cloud Enthusiast | AI & Web Application Developer</p>
 </header>
 
 <div class="container">
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a passionate software developer currently pursuing my Master's in Computer Science at Governors State University. With hands-on experience in Java, Python, and ASP.NET, I specialize in building scalable, efficient applications and dynamic web solutions.
-        </p>
-    </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h4>Open Table Web Application (ASP.NET)</h4>
-            <p>A web-based restaurant reservation system using ASP.NET Core MVC with C# and SQL Server. Features include dynamic filtering, reservation workflows, admin panel, and session handling.</p>
-        </div>
-        <div class="project-card">
-            <h4>Beauty Parlor Appointment System (Java)</h4>
-            <p>A desktop Java application for managing appointment bookings with CSV-based data storage, built using OOP principles.</p>
-        </div>
-        <div class="project-card">
-            <h4>Invoice Management System (Python)</h4>
-            <p>Python-Tkinter GUI application for generating and managing invoices with CRUD functionality and PDF export support.</p>
-        </div>
-        <div class="project-card">
-            <h4>Healthcare Management System (SQL)</h4>
-            <p>SQL database project to manage hospital data with ER/EER diagrams, stored procedures, and complex queries for healthcare data operations.</p>
-        </div>
-    </section>
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Aspiring software developer and Computer Science graduate student at Governors State University (GPA 3.97). 
+      Passionate about building scalable web apps, AI-driven solutions, and cloud-native systems. 
+      Experienced in Java, Python, React, ASP.NET, and AWS, with internships in web development and AI research. 
+      Eager to apply technical expertise and creativity in mission-driven environments.
+    </p>
+  </section>
 
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <p>
-            <strong>Intern | Irax Tech Pvt. Ltd. | May 2023 – Nov 2023</strong><br>
-            Developed a responsive web application using HTML, CSS, JavaScript, and CodeIgniter. Focused on modular MVC structure, Bootstrap styling, and database integration with MySQL.
-        </p>
-    </section>
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Languages: Java, Python, C, SQL</li>
-            <li>Web: HTML, CSS, JavaScript, ASP.NET</li>
-            <li>Tools: MySQL, SQLite, Bootstrap, Git</li>
-            <li>Certifications: AWS Cloud Computing, Python (Microsoft), AI & Cybersecurity (Cisco)</li>
-        </ul>
-    </section>
+    <div class="project-card">
+      <h4>AI Task Manager Web App (React + MySQL)</h4>
+      <p>Full-stack task management system with JWT authentication, bcrypt-secured logins, and REST APIs. Features task filtering, analytics dashboard, and a responsive React + Vite + Material UI frontend with MySQL backend integration.</p>
+    </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:sanjana.balannagari@gmail.com">sanjana.balannagari@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/sanjana-reddy-992369228/">Visit My Profile</a></p>
-        <p>GitHub: <a href="https://github.com/Sanjana-Balannagari/">View My Code</a></p>
-        <a href="Sanjana_Resume.pdf" class="btn btn-custom" download>Download Resume</a>
+    <div class="project-card">
+      <h4>LLM Text Classification Pipeline (Python, OpenAI API)</h4>
+      <p>Developed a zero-shot & few-shot text classification system using GPT. Automated prompt iteration and evaluation (~30% accuracy boost) while reducing inference cost by 30%. Delivered an interactive Streamlit demo.</p>
+    </div>
 
-    </section>
+    <div class="project-card">
+      <h4>Micronaut AWS Lambda Integration (Java 17)</h4>
+      <p>Built serverless apps with Micronaut for Amazon Connect, integrated DynamoDB, and tested locally via LocalStack. Packaged with Maven and validated contact flows with Cyara for reliable customer interactions.</p>
+    </div>
+
+    <div class="project-card">
+      <h4>Open Table Web Application (ASP.NET MVC, C#)</h4>
+      <p>Restaurant reservation system with CRUD features, session handling, Bootstrap styling, and SQL Server integration. Delivered a responsive UI with real-time filtering and admin panel.</p>
+    </div>
+
+    <div class="project-card">
+      <h4>Self-Balancing Robot (PWA + IoT)</h4>
+      <p>Designed IoT robot using ESP32 + Arduino with PID control logic, IR obstacle sensors, and real-time graph visualization. Controlled via Bluetooth-enabled React PWA and Web Bluetooth API.</p>
+    </div>
+
+    <div class="project-card">
+      <h4>Invoice Management System (Python Tkinter)</h4>
+      <p>GUI-based invoice generator with CRUD operations, PDF export, and modular OOP-based code for small businesses.</p>
+    </div>
+
+    <div class="project-card">
+      <h4>Healthcare Management System (SQL)</h4>
+      <p>Designed normalized relational schemas with ER/EER diagrams, stored procedures, and optimized queries for hospital records, improving operational efficiency.</p>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <p>
+      <strong>Web Development Intern | Irax Tech Pvt. Ltd. | May 2023 – Nov 2023</strong><br>
+      Built responsive web applications using HTML, CSS, Bootstrap, JavaScript, and jQuery. 
+      Applied MVC architecture and OOP design for scalable backend, integrated MySQL for secure CRUD operations, 
+      and collaborated in Agile sprints.<br><br>
+
+      <strong>AI Research Intern | Indian Servers | May 2022 – Jul 2022</strong><br>
+      Trained CNN models for facial attribute detection. 
+      Applied preprocessing (augmentation, grayscale conversion) to boost accuracy. 
+      Gained end-to-end ML pipeline experience, from data wrangling to deployment.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, Java, C#, SQL, JavaScript</li>
+      <li><strong>Web & App Dev:</strong> ASP.NET MVC, React, Streamlit, HTML/CSS, Bootstrap, jQuery</li>
+      <li><strong>Databases:</strong> MySQL, SQL Server, SQLite, DynamoDB</li>
+      <li><strong>Cloud & DevOps:</strong> AWS (Lambda, DynamoDB, API Gateway, IAM, S3), Terraform, LocalStack, Git</li>
+      <li><strong>ML & AI:</strong> CNNs, Scikit-learn, OpenAI APIs, Model Evaluation</li>
+      <li><strong>Salesforce:</strong> Custom Objects, Lightning UI, CRUD</li>
+      <li><strong>Concepts & Tools:</strong> REST APIs, OOP, MVC, JWT Auth, bcrypt, Agile</li>
+    </ul>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>AWS Cloud Computing – Andhra Pradesh State Skill Development Corporation</li>
+      <li>Python Programming – Microsoft</li>
+      <li>Introduction to Data Science – Cisco</li>
+      <li>AI Fundamentals – IBM SkillsBuild & Cisco</li>
+      <li>Introduction to Cybersecurity – Cisco</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sanjana.balannagari@gmail.com">sanjana.balannagari@gmail.com</a></p>
+    <p>Phone: (312) 933-9857</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sanjana-reddy-992369228/" target="_blank">Visit My Profile</a></p>
+    <p>GitHub: <a href="https://github.com/Sanjana-Balannagari" target="_blank">View My Code</a></p>
+    <a href="Sanjana_Resume.pdf" class="btn btn-custom" download>Download Resume</a>
+  </section>
+
 </div>
 
 <footer>
-    <p>&copy; 2025 Sanjana Balannagari. All rights reserved.</p>
+  <p>&copy; 2025 Sanjana Balannagari. All rights reserved.</p>
 </footer>
 
 </body>
