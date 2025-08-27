@@ -11,7 +11,7 @@
     header { background: linear-gradient(90deg,#343a40 60%,#0d6efd 100%); color:white; padding:3rem 0 2rem; text-align:center; }
     header h1 { font-family:'Montserrat',sans-serif; font-weight:700; letter-spacing:1px; }
     header p { font-size:1.3rem; font-weight:500; }
-    .avatar { width:110px; height:110px; border-radius:50%; border:4px solid #fff; object-fit:cover; margin-bottom:1rem; }
+    .avatar { width:120px; height:120px; border-radius:50%; border:4px solid #fff; object-fit:cover; margin-bottom:1rem; }
     section { padding:2.5rem 0 1.7rem; }
     h2 { font-family:'Montserrat',sans-serif; color:#0d6efd; font-weight:700; margin-bottom:1.1rem; }
     .project-card { background:white; border-radius:14px; box-shadow:0 4px 20px rgba(13,110,253,0.08); padding:1.5rem; margin-bottom:2rem; transition:.2s; border:1.5px solid #e9ecef; }
@@ -33,14 +33,40 @@
 
 <div class="container">
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
+  <!-- Objective -->
+  <section id="objective">
+    <h2>Objective</h2>
     <p>
-      Aspiring software developer and Computer Science graduate student at Governors State University (GPA 3.97). 
-      Passionate about building scalable web apps, AI-driven solutions, and cloud-native systems. 
-      Experienced in Java, Python, React, ASP.NET, and AWS, with internships in web development and AI research. 
-      Eager to apply technical expertise and creativity in mission-driven environments.
+      Aspiring software developer and Computer Science student seeking a Fall 2025 internship at NPR to apply and expand skills in modern web development, Agile collaboration, and digital storytelling. Passionate about public media and eager to contribute to innovative user experiences through technologies like React, PHP, and AWS in a mission-driven environment.
+    </p>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <p>
+      <strong>Master of Science in Computer Science</strong> | Governors State University, University Park, IL | Jan 2024 – Current <br>
+      GPA: 3.97 | Coursework: Machine Learning, Distributed Systems, Operating Systems, Cloud Computing
+    </p>
+    <p>
+      <strong>Bachelor of Technology in Computer Science</strong> | Narayana Engineering College, India | Aug 2019 – May 2023 <br>
+      GPA: 3.65 | Coursework: Data Structures, Web Programming, Software Engineering, Database Systems, OOP, Agile
+    </p>
+  </section>
+
+  <!-- Professional Experience -->
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <p>
+      <strong>Web Development Intern | Irax Tech Pvt. Ltd. | May 2023 – Nov 2023</strong><br>
+      • Built responsive web apps using HTML, CSS, JavaScript, jQuery, and Bootstrap.<br>
+      • Designed MVC architecture with MySQL CRUD integration.<br>
+      • Collaborated in Agile sprints delivering scalable, secure solutions.<br><br>
+
+      <strong>AI Research Intern | Indian Servers | May 2022 – Jul 2022</strong><br>
+      • Trained CNN models on real-world datasets for facial attribute detection.<br>
+      • Applied preprocessing (augmentation, grayscale conversion) to boost accuracy.<br>
+      • Gained end-to-end ML pipeline experience from preprocessing to deployment.
     </p>
   </section>
 
@@ -48,56 +74,20 @@
   <section id="projects">
     <h2>Projects</h2>
 
-    <div class="project-card">
-      <h4>AI Task Manager Web App (React + MySQL)</h4>
-      <p>Full-stack task management system with JWT authentication, bcrypt-secured logins, and REST APIs. Features task filtering, analytics dashboard, and a responsive React + Vite + Material UI frontend with MySQL backend integration.</p>
-    </div>
-
-    <div class="project-card">
-      <h4>LLM Text Classification Pipeline (Python, OpenAI API)</h4>
-      <p>Developed a zero-shot & few-shot text classification system using GPT. Automated prompt iteration and evaluation (~30% accuracy boost) while reducing inference cost by 30%. Delivered an interactive Streamlit demo.</p>
-    </div>
-
-    <div class="project-card">
-      <h4>Micronaut AWS Lambda Integration (Java 17)</h4>
-      <p>Built serverless apps with Micronaut for Amazon Connect, integrated DynamoDB, and tested locally via LocalStack. Packaged with Maven and validated contact flows with Cyara for reliable customer interactions.</p>
-    </div>
-
-    <div class="project-card">
-      <h4>Open Table Web Application (ASP.NET MVC, C#)</h4>
-      <p>Restaurant reservation system with CRUD features, session handling, Bootstrap styling, and SQL Server integration. Delivered a responsive UI with real-time filtering and admin panel.</p>
-    </div>
-
-    <div class="project-card">
-      <h4>Self-Balancing Robot (PWA + IoT)</h4>
-      <p>Designed IoT robot using ESP32 + Arduino with PID control logic, IR obstacle sensors, and real-time graph visualization. Controlled via Bluetooth-enabled React PWA and Web Bluetooth API.</p>
-    </div>
-
-    <div class="project-card">
-      <h4>Invoice Management System (Python Tkinter)</h4>
-      <p>GUI-based invoice generator with CRUD operations, PDF export, and modular OOP-based code for small businesses.</p>
-    </div>
-
-    <div class="project-card">
-      <h4>Healthcare Management System (SQL)</h4>
-      <p>Designed normalized relational schemas with ER/EER diagrams, stored procedures, and optimized queries for hospital records, improving operational efficiency.</p>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience">
-    <h2>Professional Experience</h2>
-    <p>
-      <strong>Web Development Intern | Irax Tech Pvt. Ltd. | May 2023 – Nov 2023</strong><br>
-      Built responsive web applications using HTML, CSS, Bootstrap, JavaScript, and jQuery. 
-      Applied MVC architecture and OOP design for scalable backend, integrated MySQL for secure CRUD operations, 
-      and collaborated in Agile sprints.<br><br>
-
-      <strong>AI Research Intern | Indian Servers | May 2022 – Jul 2022</strong><br>
-      Trained CNN models for facial attribute detection. 
-      Applied preprocessing (augmentation, grayscale conversion) to boost accuracy. 
-      Gained end-to-end ML pipeline experience, from data wrangling to deployment.
-    </p>
+    <div class="project-card"><h4>AI Task Manager Web App (2025)</h4><p>Full-stack task management system with JWT authentication, bcrypt, REST APIs, React + Vite + Material UI frontend, and MySQL backend. Features real-time dashboard analytics.</p></div>
+    <div class="project-card"><h4>LLM Prompt Engineering for Text Classification (2025)</h4><p>Zero-shot & few-shot classification using OpenAI GPT with 30% accuracy improvement, reduced inference costs, and Streamlit demo for real-time tuning.</p></div>
+    <div class="project-card"><h4>Micronaut AWS Integration (2025)</h4><p>Built Java 17 Lambda functions with Micronaut, integrated DynamoDB, tested locally via LocalStack, and validated with Cyara.</p></div>
+    <div class="project-card"><h4>SecureConnectTerraform (2025)</h4><p>Deployed secure AWS infrastructure (Lambda, DynamoDB, Secrets Manager) with Terraform; cut 100% dev cloud costs using LocalStack simulation.</p></div>
+    <div class="project-card"><h4>Serverless Sports Event API (2025)</h4><p>Developed serverless CRUD API with AWS Lambda + DynamoDB + API Gateway. Automated deployments with AWS CLI and Maven.</p></div>
+    <div class="project-card"><h4>Salesforce Contact Manager (2025)</h4><p>Custom Salesforce object for managing contacts with Lightning UI layouts, CRUD ops, and dynamic filtering.</p></div>
+    <div class="project-card"><h4>Open Table Web Application (2025)</h4><p>ASP.NET MVC restaurant reservation system with CRUD features, Bootstrap UI, session handling, and SQL Server database integration.</p></div>
+    <div class="project-card"><h4>Self-Balancing Robot (2023)</h4><p>IoT robot built with ESP32, Arduino, PID control, IR sensors, real-time graphing, and controlled via React PWA using Web Bluetooth API.</p></div>
+    <div class="project-card"><h4>Healthcare Management System (2024)</h4><p>SQL-based hospital system with normalized schemas, ER/EER diagrams, stored procedures, and query optimization for 100% data integrity.</p></div>
+    <div class="project-card"><h4>Invoice Management System (2024)</h4><p>Python Tkinter GUI app to manage invoices with CRUD, PDF export, and modular OOP-based code.</p></div>
+    <div class="project-card"><h4>Beauty Parlor Appointment System (2024)</h4><p>Java desktop app for client scheduling with OOP modularity and CSV-based data storage.</p></div>
+    <div class="project-card"><h4>Age Detection with CNN (2022)</h4><p>Trained CNN on UTKFace & Facial-age datasets to predict age, gender, emotion with preprocessing for enhanced accuracy.</p></div>
+    <div class="project-card"><h4>Minecraft Plugin Development Practice (2025)</h4><p>Developed custom plugins using Java + Spigot API, added commands, gameplay mechanics, and real-time Bukkit event handling.</p></div>
+    <div class="project-card"><h4>Wells Fargo Job Simulation (2025)</h4><p>Designed ERD for financial portfolio management, implemented with IntelliJ, and published to GitHub.</p></div>
   </section>
 
   <!-- Skills -->
@@ -108,9 +98,9 @@
       <li><strong>Web & App Dev:</strong> ASP.NET MVC, React, Streamlit, HTML/CSS, Bootstrap, jQuery</li>
       <li><strong>Databases:</strong> MySQL, SQL Server, SQLite, DynamoDB</li>
       <li><strong>Cloud & DevOps:</strong> AWS (Lambda, DynamoDB, API Gateway, IAM, S3), Terraform, LocalStack, Git</li>
-      <li><strong>ML & AI:</strong> CNNs, Scikit-learn, OpenAI APIs, Model Evaluation</li>
+      <li><strong>ML & AI:</strong> Scikit-learn, CNNs, OpenAI APIs, Model Evaluation</li>
       <li><strong>Salesforce:</strong> Custom Objects, Lightning UI, CRUD</li>
-      <li><strong>Concepts & Tools:</strong> REST APIs, OOP, MVC, JWT Auth, bcrypt, Agile</li>
+      <li><strong>Concepts:</strong> REST APIs, OOP, MVC, JWT Auth, bcrypt, Agile</li>
     </ul>
   </section>
 
@@ -118,11 +108,24 @@
   <section id="certifications">
     <h2>Certifications</h2>
     <ul>
-      <li>AWS Cloud Computing – Andhra Pradesh State Skill Development Corporation</li>
+      <li>AWS Cloud Computing – APSSDC</li>
       <li>Python Programming – Microsoft</li>
       <li>Introduction to Data Science – Cisco</li>
       <li>AI Fundamentals – IBM SkillsBuild & Cisco</li>
       <li>Introduction to Cybersecurity – Cisco</li>
+    </ul>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements">
+    <h2>Extra & Co-Curricular Achievements</h2>
+    <ul>
+      <li>Secretary, IEEE WIE Society (2020–2023) – Organized workshops & tech talks.</li>
+      <li>Student Representative – Led coordination & events.</li>
+      <li>NCC Cadet – Community building, athletics, leadership.</li>
+      <li>Active participation in IEEE, Google Dev fests, technical workshops.</li>
+      <li>Received awards for academics & competitions.</li>
+      <li>State-level athletics participant and medal winner.</li>
     </ul>
   </section>
 
